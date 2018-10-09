@@ -5,6 +5,8 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './WarningAlert/warning.component';
+import { FormsModule } from '@angular/forms';
+import { DataBindingExampleComponent } from './data-binding-example/data-binding-example.component';
 
 @NgModule({
   declarations: [
@@ -12,10 +14,12 @@ import { WarningAlertComponent } from './WarningAlert/warning.component';
     ServerComponent,
     ServersComponent,
     WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    DataBindingExampleComponent
   ],
   imports: [
-    BrowserModule    
+    BrowserModule,
+    FormsModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
